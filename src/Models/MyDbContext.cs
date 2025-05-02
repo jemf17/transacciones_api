@@ -67,7 +67,7 @@ public partial class ApplicationDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
     // coneccion a la bd 
     Env.Load();
-    optionsBuilder.UseNpgsql($"{Environment.GetEnvironmentVariable("DATABASE_URL")}");
+    optionsBuilder.UseNpgsql($"{Environment.GetEnvironmentVariable("DATABASE_CONNECTION")}");
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
