@@ -11,29 +11,29 @@ namespace ApiTrans.Controllers {
         public PedidosController(PedidoService pedidoService){
             _pedidoService = pedidoService;
         }
-        [HttpGet("all/",Name = "GetPedidos")]
+        [HttpPost("all/",Name = "GetPedidos")]
         public async Task<ActionResult> GetAll() {
             await Task.Delay(1);
             return Ok(_pedidoService.consulta());
         }
-        [HttpGet("comuniti/",Name = "GetPedidoComunity")]
+        [HttpPost("comuniti/",Name = "GetPedidoComunity")]
         public async Task<ActionResult> GetComunity() {
             await Task.Delay(1);
             var service =  _pedidoService.consultaComunidad();
             return Ok(service);
         }
-        [HttpGet("artist/",Name = "GetPedidosArtist")]
+        [HttpPost("artist/",Name = "GetPedidosArtist")]
         public async Task<ActionResult> GetArtists() {
             await Task.Delay(1);
             var service =  _pedidoService.consultaArtistasTraductor();
             return Ok(service);
         }
-        [HttpGet("{id}", Name = "GetPedidosByID")]
-        public async Task<ActionResult> GetPedidoById(Guid id) {
+        [HttpPost("PedidoId", Name = "GetPedidosByID")]
+        public async Task<ActionResult> GetPedidoById([FromBody] dynamic request) {
             await Task.Delay(1);
             if (id == Guid.Empty)
                 return NotFound();
-            var service =  _pedidoService.consultaPorId(id);
+            var service =  _pedidoService.consultaPorId(request.id);
             return Ok(service);
         }
         [HttpPost("create", Name = "CreatePedido")]
