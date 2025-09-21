@@ -1,5 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using api_transacciones.Models;
+using api_transacciones.ModelsSupabase;
 using ApiTrans.Services;
 //using middlewares;
 using Resend;
@@ -25,6 +26,9 @@ if (!builder.Environment.IsDevelopment())
     });
 }
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
+options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")), ServiceLifetime.Singleton
+);
+builder.Services.AddDbContext<PostgresContext>(options =>
 options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")), ServiceLifetime.Singleton
 );
 builder.Services.AddOptions();

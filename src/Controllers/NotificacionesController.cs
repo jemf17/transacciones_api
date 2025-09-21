@@ -19,8 +19,8 @@ namespace ApiTrans.Controllers {
         {
             _Notificacion = Notificacion;
         }
-    [HttpGet("colawebs/{user}", Name = "WebSNotificacion")]
-    public async Task ConnectWebSocket(Guid user)
+    [HttpPost("ColaWebs", Name = "WebSNotificacion")]
+    public async Task ConnectWebSocket([FromBody] Guid user)
     {   
         try{
         if (HttpContext.WebSockets.IsWebSocketRequest)
@@ -34,8 +34,8 @@ namespace ApiTrans.Controllers {
         }
             
     }
-    [HttpGet("getcalaps/{artist}", Name = "GetSolicitudColaboracion")]
-    public async Task<ActionResult> GetSolicitudColaboracion(Guid artist) {
+    [HttpPost("GetCalaps", Name = "GetSolicitudColaboracion")]
+    public async Task<ActionResult> GetSolicitudColaboracion([FromBody] Guid artist) {
             await Task.Delay(1);
             return Ok(_Notificacion.getColaps(artist));
         }

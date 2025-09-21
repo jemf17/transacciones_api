@@ -17,8 +17,9 @@ namespace ApiTrans.Services
             {
                 return true;
             }
-            bool authArtist = _context.Obras.Join(_context.Colaboladores, o => o.Id, c => c.IdObra, (o, c)=> 
-            new {o,c}).Any(x => (x.o.Artista == id_user || x.c.IdArts== id_user) && x.o.Id == id_obra);
+            bool authArtist = _context.Obras
+            .Join(_context.Colaboladores, o => o.Id, c => c.IdObra, (o, c) => new { o, c })
+            .Any(x => (x.o.Artista == id_user || x.c.IdArts== id_user) && x.o.Id == id_obra);
             bool authPayCap = _context.AutorizacionesCapitulosPagos.Any(ac => ac.IdObra == id_obra && ac.IdUser == id_user && ac.Numero == capitulo);
             if (authArtist || authPayCap)
             {

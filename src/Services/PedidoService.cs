@@ -80,5 +80,50 @@ namespace ApiTrans.Services
             return Pedido;
 
             }
+        public async Task crearPedido(dynamic data){
+            try {
+            var pedido = new Pedido
+            {
+                IdIdiomaTraducir = data.IdIdiomaTraducir,
+                IdObra = data.IdObra,
+                NumeroCap = data.NumeroCap,
+                IdArtista = data.IdArtista,
+                Tipo = data.Tipo,
+                Fecha = DateOnly.FromDateTime(DateTime.Now),
+                Panel = data.Panel,
+                Texto = data.Texto,
+                Estado = "libre",
+            };
+            _context.Pedidos.Add(pedido);
+            await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error al crear el pedido", ex);
+            }
         }
+        public bool ExistPedido(Guid id, Guid id_artista){
+            var exists = _context.Pedidos.Any(p => p.Id == id && p.IdArtista == id_artista);
+            return exists;
+        }
+        public async Task EditarPedido(Guid id, dynamic data){
+            try {
+            var pedido = await _context.Pedidos.FindAsync(id);
+            pedido.IdIdiomaTraducir = data.IdIdiomaTraducir;
+            pedido.IdObra = pedido.IdObra;
+            pedido.NumeroCap = pedido.NumeroCap;
+            pedido.IdArtista = pedido.IdArtista;
+            pedido.Tipo = data.Tipo;
+            pedido.Fecha = pedido.Fecha;
+            pedido.Panel = data.Panel;
+            pedido.Texto = data.Texto;
+            pedido.Estado = pedido.Estado;
+            await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error al editar el pedido", ex);
+            }
     }
+    }
+}

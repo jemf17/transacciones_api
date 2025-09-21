@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "g6XCQMZxiUM=",
+  "dgSpecHash": "ngZeA21c5SI=",
   "success": true,
   "projectFilePath": "C:\\Users\\jemf\\Desktop\\transacciones_api\\api_transacciones.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jemf\\.nuget\\packages\\apimatic.core\\0.4.9\\apimatic.core.0.4.9.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\dotnetenv\\3.1.1\\dotnetenv.3.1.1.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
@@ -36,6 +37,7 @@
     "C:\\Users\\jemf\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\4.8.0\\microsoft.codeanalysis.csharp.workspaces.4.8.0.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.8.0\\microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\microsoft.codeanalysis.workspaces.msbuild\\4.8.0\\microsoft.codeanalysis.workspaces.msbuild.4.8.0.nupkg.sha512",
+    "C:\\Users\\jemf\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.2\\microsoft.entityframeworkcore.9.0.2.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.2\\microsoft.entityframeworkcore.abstractions.9.0.2.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.2\\microsoft.entityframeworkcore.analyzers.9.0.2.nupkg.sha512",
@@ -77,18 +79,21 @@
     "C:\\Users\\jemf\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.7.0\\microsoft.identitymodel.jsonwebtokens.8.7.0.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\microsoft.identitymodel.logging\\8.7.0\\microsoft.identitymodel.logging.8.7.0.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.7.0\\microsoft.identitymodel.tokens.8.7.0.nupkg.sha512",
+    "C:\\Users\\jemf\\.nuget\\packages\\microsoft.json.pointer\\2.3.0\\microsoft.json.pointer.2.3.0.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\microsoft.net.http.headers.2.3.0.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\jemf\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\jemf\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\npgsql\\9.0.2\\npgsql.9.0.2.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.3\\npgsql.entityframeworkcore.postgresql.9.0.3.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\paypal\\1.9.1\\paypal.1.9.1.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\paypalcheckoutsdk\\1.0.4\\paypalcheckoutsdk.1.0.4.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\paypalhttp\\1.0.1\\paypalhttp.1.0.1.nupkg.sha512",
+    "C:\\Users\\jemf\\.nuget\\packages\\paypalserversdk\\1.1.0\\paypalserversdk.1.1.0.nupkg.sha512",
+    "C:\\Users\\jemf\\.nuget\\packages\\polly\\7.2.3\\polly.7.2.3.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\resend\\0.1.0\\resend.0.1.0.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -180,6 +185,12 @@
     "C:\\Users\\jemf\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\jemf\\Desktop\\transacciones_api\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",

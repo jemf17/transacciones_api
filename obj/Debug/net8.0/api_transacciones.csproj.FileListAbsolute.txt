@@ -146,3 +146,4 @@
 /home/jemf/Desktop/WebPageProyect/api_transacciones/bin/Debug/net8.0/api_transacciones.staticwebassets.runtime.json
 /home/jemf/Desktop/WebPageProyect/api_transacciones/bin/Debug/net8.0/managed_context/metadata.json
 /home/jemf/Desktop/WebPageProyect/api_transacciones/bin/Debug/net8.0/test_suite_analysis/metadata.json
+/home/jemf/Desktop/WebPageProyect/api_transacciones/obj/Debug/net8.0/api_transacciones.sourcelink.json

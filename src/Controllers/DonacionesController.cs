@@ -13,7 +13,7 @@ namespace ApiTrans.Controllers {
         public Donaciones(DonacionService donacionService){
             _donacionService = donacionService;
         }
-        [HttpGet]
+        [HttpPost("ConsultarDonacion")]
         public async Task<ActionResult> Get() {
             await Task.Delay(1);
             return Ok(_donacionService.consulta());
