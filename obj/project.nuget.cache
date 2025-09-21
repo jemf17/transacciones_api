@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y96HnrJNq/M=",
+  "dgSpecHash": "g6XCQMZxiUM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jemf\\Desktop\\transacciones_api\\hm.apirest.net8\\api_transacciones.csproj",
+  "projectFilePath": "C:\\Users\\jemf\\Desktop\\transacciones_api\\api_transacciones.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jemf\\.nuget\\packages\\dotnetenv\\3.1.1\\dotnetenv.3.1.1.nupkg.sha512",
     "C:\\Users\\jemf\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

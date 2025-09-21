@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jemf\\Desktop\\transacciones_api\\hm.apirest.net8\\api_transacciones.csproj": {}
+    "C:\\Users\\jemf\\Desktop\\transacciones_api\\api_transacciones.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jemf\\Desktop\\transacciones_api\\hm.apirest.net8\\api_transacciones.csproj": {
+    "C:\\Users\\jemf\\Desktop\\transacciones_api\\api_transacciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jemf\\Desktop\\transacciones_api\\hm.apirest.net8\\api_transacciones.csproj",
+        "projectUniqueName": "C:\\Users\\jemf\\Desktop\\transacciones_api\\api_transacciones.csproj",
         "projectName": "api_transacciones",
-        "projectPath": "C:\\Users\\jemf\\Desktop\\transacciones_api\\hm.apirest.net8\\api_transacciones.csproj",
+        "projectPath": "C:\\Users\\jemf\\Desktop\\transacciones_api\\api_transacciones.csproj",
         "packagesPath": "C:\\Users\\jemf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jemf\\Desktop\\transacciones_api\\hm.apirest.net8\\obj\\",
+        "outputPath": "C:\\Users\\jemf\\Desktop\\transacciones_api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jemf\\AppData\\Roaming\\NuGet\\NuGet.Config"
