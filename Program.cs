@@ -1,10 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using api_transacciones.Models;
 using api_transacciones.ModelsSupabase;
-using ApiTrans.Services;
+//using ApiTrans.Services;
 //using middlewares;
 using Resend;
-using ApiTrans.Email;
+//using ApiTrans.Email;
+using Cobros.Crypto;
 //using ApiTrans.Data.PaypalService;
 var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 {
@@ -38,11 +39,12 @@ builder.Services.Configure<ResendClientOptions>( o =>
     o.ApiToken = Environment.GetEnvironmentVariable( "RESEND_KEY" )!;
 } );
 builder.Services.AddTransient<IResend, ResendClient>();
-builder.Services.AddScoped<AuthCapituloService>();
-builder.Services.AddScoped<NotificacionesService>();
-builder.Services.AddScoped<PedidoService>();
-builder.Services.AddScoped<DonacionService>();
-builder.Services.AddScoped<TemplateService>();
+//builder.Services.AddScoped<AuthCapituloService>();
+//builder.Services.AddScoped<NotificacionesService>();
+//builder.Services.AddScoped<PedidoService>();
+//builder.Services.AddScoped<DonacionService>();
+//builder.Services.AddScoped<TemplateService>();
+builder.Services.AddGestorBinance();
 builder.Services.AddControllers();
 //builder.Services.AddTransient<PaypalService>();
 var app = builder.Build();

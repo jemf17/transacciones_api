@@ -3,5 +3,6 @@
 managed_context
 .env
 .qodo
-bin
-obj
+Cobros.Crypto/obj
+bin/
+obj/
