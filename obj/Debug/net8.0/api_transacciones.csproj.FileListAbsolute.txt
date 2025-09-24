@@ -144,6 +144,10 @@
 /home/jemf/Desktop/WebPageProyect/api_transacciones/obj/Debug/net8.0/api_transacciones.genruntimeconfig.cache
 /home/jemf/Desktop/WebPageProyect/api_transacciones/obj/Debug/net8.0/ref/api_transacciones.dll
 /home/jemf/Desktop/WebPageProyect/api_transacciones/bin/Debug/net8.0/api_transacciones.staticwebassets.runtime.json
-/home/jemf/Desktop/WebPageProyect/api_transacciones/bin/Debug/net8.0/managed_context/metadata.json
-/home/jemf/Desktop/WebPageProyect/api_transacciones/bin/Debug/net8.0/test_suite_analysis/metadata.json
 /home/jemf/Desktop/WebPageProyect/api_transacciones/obj/Debug/net8.0/api_transacciones.sourcelink.json
+/home/jemf/Desktop/WebPageProyect/api_transacciones/bin/Debug/net8.0/APIMatic.Core.dll
+/home/jemf/Desktop/WebPageProyect/api_transacciones/bin/Debug/net8.0/Microsoft.Json.Pointer.dll
+/home/jemf/Desktop/WebPageProyect/api_transacciones/bin/Debug/net8.0/PayPalServerSDK.dll
+/home/jemf/Desktop/WebPageProyect/api_transacciones/bin/Debug/net8.0/Polly.dll
+/home/jemf/Desktop/WebPageProyect/api_transacciones/bin/Debug/net8.0/Cobros.Crypto/obj/Cobros.Crypto.csproj.nuget.dgspec.json
+/home/jemf/Desktop/WebPageProyect/api_transacciones/bin/Debug/net8.0/Cobros.Crypto/obj/project.assets.json
