@@ -31,7 +31,7 @@ namespace ApiTrans.Controllers {
         [HttpPost("PedidoId", Name = "GetPedidosByID")]
         public async Task<ActionResult> GetPedidoById([FromBody] dynamic request) {
             await Task.Delay(1);
-            if (id == Guid.Empty)
+            if (request.id == Guid.Empty)
                 return NotFound();
             var service =  _pedidoService.consultaPorId(request.id);
             return Ok(service);
