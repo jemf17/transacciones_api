@@ -1,19 +1,11 @@
 {
   "Version": 1,
-  "Hash": "NPWF2RW1gIso3/iKwLabIqC/jnLI/j+IPfDpM9xTAT4=",
+  "Hash": "sCPF9DXncEZpurqRs3jzjq3+NYnVKF1YX7gzFHNzud0=",
   "Source": "api_transacciones",
   "BasePath": "_content/api_transacciones",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "api_transacciones/wwwroot",
-      "Source": "api_transacciones",
-      "ContentRoot": "/home/jemf/Desktop/WebPageProyect/api_transacciones/wwwroot/",
-      "BasePath": "_content/api_transacciones",
-      "Pattern": "**"
-    }
-  ],
+  "DiscoveryPatterns": [],
   "Assets": []
 }
