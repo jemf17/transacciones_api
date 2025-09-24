@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using api_transacciones.Models;
 using api_transacciones.ModelsSupabase;
 //using ApiTrans.Services;
