@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <!-- Prevent SDK from generating TargetFrameworkAttribute in multiple projects -->
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <!-- Prevent SDK from generating assembly info attributes (Company,Version, etc.) -->
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <!-- Keep default behavior for other props -->
+  </PropertyGroup>
+</Project>
