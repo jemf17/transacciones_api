@@ -1,14 +1,12 @@
-using api_transacciones.Models;
-//using ApiTrans.DTO;
-using Microsoft.EntityFrameworkCore;
+using DBModels;
 namespace ApiTrans.Services
 {
     public class AuthCapituloService {
         private readonly ApplicationDbContext _context;
 
-        public AuthCapituloService(ApplicationDbContext context)
+        public AuthCapituloService( ApplicationDbContext context)
          {
-             _context = context;
+            _context = context;
          }
         public bool VerificarUsuarioObra(Guid id_user, Guid id_obra, int capitulo)
         {

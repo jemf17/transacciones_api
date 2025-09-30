@@ -1,4 +1,4 @@
-using api_transacciones.Models;
+using DBModels;
 using ApiTrans.DTO;
 using System.Net.WebSockets;
 //using ApiTrans.DTO;

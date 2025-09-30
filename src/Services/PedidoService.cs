@@ -1,4 +1,4 @@
-using api_transacciones.Models;
+using DBModels;
 using ApiTrans.DTO;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;

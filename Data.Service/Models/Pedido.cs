@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace api_transacciones.Models;
+namespace DBModels;
 
 public partial class Pedido
 {

@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using ApiTrans.Services;
-using api_transacciones.Models;
 
 namespace ApiTrans.Controllers
 {

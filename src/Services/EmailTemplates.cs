@@ -1,5 +1,5 @@
 using System.IO;
-
+using DBModels;
 namespace ApiTrans.Email {
 public class TemplateService
 {

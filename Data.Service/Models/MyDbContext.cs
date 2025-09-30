@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using DotNetEnv;
 
-namespace api_transacciones.Models;
+namespace DBModels;
 
 public partial class ApplicationDbContext : DbContext
 {
@@ -64,11 +63,6 @@ public partial class ApplicationDbContext : DbContext
 
     public virtual DbSet<Vista> Vistas { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
-    // coneccion a la bd 
-    Env.Load();
-    optionsBuilder.UseNpgsql($"{Environment.GetEnvironmentVariable("DATABASE_CONNECTION")}");
-    }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder
